@@ -295,7 +295,7 @@
     .about-photo {
       width: 110px;
       flex-shrink: 0;
-      height: 140px;
+      aspect-ratio: 3 / 4;
       object-fit: cover;
       object-position: top center;
       border-radius: 14px;
@@ -317,7 +317,7 @@
     }
     @media (max-width: 400px) {
       .about-card-inner { flex-direction: column; }
-      .about-photo { width: 100%; height: 220px; }
+      .about-photo { width: 100%; aspect-ratio: 4 / 3; object-position: top center; }
     }
 
     /* ── CONTACTS BLOCK ── */
@@ -360,7 +360,7 @@
     }
     @media (max-width: 440px) {
       .contacts-block { flex-direction: column; }
-      .contacts-photo { width: 100%; aspect-ratio: 4 / 3; object-position: center 20%; }
+      .contacts-photo { width: 100%; aspect-ratio: 3 / 4; object-position: center 10%; }
     }
 
     /* ── DIVIDER ── */
@@ -482,7 +482,7 @@
 <section class="hero">
   <img class="hero-photo" src="photo_2026-05-03_14-18-49.jpg" alt="Татьяна Антипова" />
   <h1>Татьяна Антипова</h1>
-  <p class="tagline">МЛМ-предприниматель · г. Серпухов</p>
+  <p class="tagline">МЛМ-предприниматель<br>г. Серпухов</p>
   <p class="lead">Помогаю женщинам начать свой бизнес в Faberlic,<br>выйти из потолка зарплаты и выстроить дополнительный доход —<br>без увольнения, агрессивных продаж и хаотичных действий</p>
 </section>
 
